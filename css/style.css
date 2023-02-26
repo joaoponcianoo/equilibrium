@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #0d192b;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.2em;
+
+    width: 300px;
+    height: auto;
+
+    border-radius: 0.5em;
+
+    box-sizing: border-box;
+
+    padding: 1.2em;
+    
+    background-color: #14253d;
+}
+
+.card-images {
+    position: relative;
+}
+
+#card-image {
+    width: 100%;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#card-image-view {
+    display: none;
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.card-title:hover {
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.card-description {
+    color: #8bacda;
+    font-weight: 200;
+}
+
+.card-coin-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-coin {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
+    font-size: 0.9em;
+    color: #00fff7;
+}
+
+.card-time {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
+    font-size: 0.8em;
+    color: #8bacda;
+}
+
+.card-line {
+    height: 1px;
+    background-color: #8bacda;
+}
+
+.card-person {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    border-top: solid 0.1mm #8bacda25;
+    padding-top: 1em;
+
+    font-size: 0.9em;
+    color: #8bacda;
+
+    font-weight: 200;
+}
+
+.person-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+}
+
+.person-name {
+    color: #ffffff;
+}
+
+.person-name:hover {
+    color: #00fff7;
+    cursor: pointer;
+}
